@@ -1,7 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Gotham Rounded, sans-serif;
-    font-weight: normal;
+    
   }
   
   body {
@@ -12,10 +11,12 @@
   }
   
   .calculator-grid {
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 70vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
   }
@@ -28,6 +29,13 @@ button {
     background-color: rgba(255, 255, 255, .75);
   }
   
+.tittle{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
 button:hover {
     background-color: rgba(255, 255, 255, .4);
   }
